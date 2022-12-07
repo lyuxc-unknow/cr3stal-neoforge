@@ -6,7 +6,8 @@
   "name": "Cr³stal",
   "description": "A Minecraft mod that turns End Crystals into Rubik's Cubes",
   "authors": [
-    "rebane2001"
+    "rebane2001",
+    "fantahund"
   ],
   "contact": {
     "homepage": "https://github.com/rebane2001/cr3stal",
@@ -25,8 +26,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
-    "minecraft": ["1.18.x", "1.19.x"]
+    "fabricloader": ">=0.14.11",
+    "minecraft": ["1.19.3-rc.3", "1.19.3"],
+    "java": ">=17"
   },
   "suggests": {
     "flamingo": "*"
