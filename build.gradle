@@ -1,6 +1,7 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version '1.1-SNAPSHOT'
 	id 'maven-publish'
+	id "com.modrinth.minotaur" version "2.4.3"
 }
 
 version = project.mod_version
@@ -44,4 +45,20 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}" }
 	}
+}
+
+modrinth {
+	token = System.getenv("MODRINTH_TOKEN")
+	projectId = project.modrinth_id
+	versionNumber = project.mod_version
+	versionName = "Cr3stal ${project.mod_version}"
+	versionType = isMCVersionNonRelease() ? "beta" : "release"
+	changelog = file("changelog.md").text
+	uploadFile = remapJar
+	gameVersions = [ project.minecraft_version ]
+	loaders = [ "fabric" ]
+}
+
+boolean isMCVersionNonRelease() {
+	return project.minecraft_version.matches('^\\d\\dw\\d\\d[a-z]$') || project.minecraft_version.contains('pre') || project.minecraft_version.contains('rc')
 }
