@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mod.lyuxc.cr3stal.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "cr3stal.refmap.json",
+  "client": [
+    "EndCrystalEntityRendererMixin"
+  ]
+}
