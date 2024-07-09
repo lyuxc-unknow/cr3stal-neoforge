@@ -1,4 +1,4 @@
-package mod.lyuxc.cr3stal;
+package com.rebane2001.cr3stal;
 
 import org.joml.Quaternionf;
 

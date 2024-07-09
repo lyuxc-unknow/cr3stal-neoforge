@@ -1,4 +1,4 @@
-package mod.lyuxc.cr3stal;
+package com.rebane2001.cr3stal;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

@@ -1,8 +1,8 @@
-package mod.lyuxc.cr3stal.mixin;
+package com.rebane2001.cr3stal.mixin;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import mod.lyuxc.cr3stal.RubicsCubeRenderer;
+import com.rebane2001.cr3stal.RubicsCubeRenderer;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EndCrystalRenderer;
